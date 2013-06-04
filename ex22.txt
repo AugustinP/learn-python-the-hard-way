@@ -1,0 +1,19 @@
+# - octothorpe or pound sign - comments out line
+% - modulo - divide by then print remainder
+%r - raw formatter - for debugging
+%d - decimal formatter - for numbers
+%s - string formatter - for strings
+""" - three double-quotes - for multiple line printing
+\n - new line
+\t - tabs in
+\ - backslash - escape character
+raw_input() - asks user for input, can be assigned to a variable
+from sys import argv - imports argv from sys module
+open(filename) - opens a file
+file.read() - reads a file
+file.truncate() - removes a file
+file.write() - writes to a file
+file.close() - closes a file
+def - defines a function
+len() - returns the length of an object
+exists()
