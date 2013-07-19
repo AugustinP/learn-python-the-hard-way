@@ -48,11 +48,26 @@ def cthulhu_room():
 	next = raw_input("> ")
 
 	if "flee" in next:
-		start()
+		water_room()
 	elif "head" in next:
 		dead("Well that was tasty!")
 	else:
 		cthulhu_room()
+
+
+def water_room():
+	print "You run as fast as you can until you find yourself blocked by a pool of deep water."
+	print "Do you swim across it or try to tiptoe round the edge?"
+
+	next = raw_input("> ")
+
+	if "swim" in next:
+		print "You swim across the water and make it to the other side, where you escape. Yay!"
+		exit(0)
+	elif "tiptoe" in next:
+		dead("The edge is slipperier than it looks. You fall and knock yourself out.")
+	else:
+		print "I didn't understand what you just said."
 
 
 def dead(why):
